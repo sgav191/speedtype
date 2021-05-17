@@ -14,7 +14,7 @@ for currentphrase in phrases:
     system("clear")
     errors = 0
     time.sleep(1)
-    print (f"Your phrase to type is '{currentphrase}'")
+    print (f"Your phrase to type is: '{currentphrase}'")
     input ("Press enter when you're ready...")
     
     starttime = time.time()
