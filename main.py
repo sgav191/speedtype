@@ -36,4 +36,4 @@ for currentphrase in phrases:
         print (f"Well done! It took you {timeroutput}secs to write the phrase. You wrote a total of {len(totalwords)} words, and there was {errors} mistakes.")
         input("Press enter when you're ready to move on to the next question...")
 
-print ("Yay! You've reached the end {name}!")
+print (f"Yay! You've reached the end {name}!")
