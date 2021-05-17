@@ -11,6 +11,7 @@ if instructionsquestion == "y":
     input("Press enter when you have read through the instructions...")
 
 for currentphrase in phrases:
+    system("clear")
     errors = 0
     time.sleep(1)
     print (f"Your phrase to type is '{currentphrase}'")
@@ -27,5 +28,9 @@ for currentphrase in phrases:
             continue
         else:
             errors = errors+1
-    print (f"Well done! It took you {timeroutput}secs to write the phrase. You wrote a total of {totalwords} words, and there were {errors} mistakes.")
-    
+    if errors == 1:
+        
+        print (f"Well done! It took you {timeroutput}secs to write the phrase. You wrote a total of {len(totalwords)} words, and there was {errors} mistake.")
+    else:
+        print (f"Well done! It took you {timeroutput}secs to write the phrase. You wrote a total of {len(totalwords)} words, and there was {errors} mistakes.")
+        input("Press enter when you're ready to move on to the next question...")
